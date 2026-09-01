@@ -481,7 +481,11 @@ h3 {
 }
 
 .wins-marquee:hover .wins-track {
-  animation-play-state: paused;
+  animation-duration: 80s;
+}
+
+.wins-marquee:active .wins-track {
+  animation-duration: 80s;
 }
 
 .store-button {
