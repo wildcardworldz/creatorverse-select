@@ -12,16 +12,7 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="CreatorVerse Club Select home">
-        <span class="brand-mark">CV</span>
-        <span>CreatorVerse Club Select</span>
-      </a>
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#channels">Channels</a>
-        <a href="#whop">Whop App</a>
-        <a href="#about">About</a>
-      </nav>
-      <a class="header-cta" href="#invite">Accept Invite</a>
+      <p class="header-note">Free lifetime access through this link</p>
     </header>
 
     <main id="top">
@@ -42,9 +33,10 @@
 
           <aside class="video-panel" aria-label="Intro video">
             <div class="video-frame">
-              <div class="play-button" aria-hidden="true"></div>
-              <p>Private Walkthrough</p>
-              <span>A short welcome video can live here above the invite flow.</span>
+              <video autoplay muted loop playsinline controls preload="metadata" aria-label="CreatorVerse Club Select walkthrough video">
+                <source src="./assets/creatorverse-intro.mp4" type="video/mp4">
+                Your browser does not support this video.
+              </video>
             </div>
             <div class="video-cta" id="invite">
               <a class="button primary" href="https://whop.com/checkout/plan_tbpdrmnUneM1v" target="_blank" rel="noreferrer">Accept Free Invite</a>
@@ -64,33 +56,63 @@
         </div>
       </section>
 
-      <section class="quick-path included-channels" id="whop" aria-labelledby="whop-title">
-        <div>
-          <p class="eyebrow">Included channels</p>
-          <h2 id="whop-title">Your private creator rooms.</h2>
+      <section class="win-wall" id="wins" aria-labelledby="wins-title">
+        <div class="wins-heading">
+          <p id="wins-title" class="eyebrow">Hear from creators inside:</p>
         </div>
-        <div class="included-list">
-          <article>
-            <span class="included-icon" aria-hidden="true">💼</span>
-            <h3>Opportunities</h3>
-            <p>Weekly brand deals, trips, & updates.</p>
-          </article>
-          <article>
-            <span class="included-icon" aria-hidden="true">🎯</span>
-            <h3>Missions</h3>
-            <p>Bounties to complete & instantly get paid.</p>
-          </article>
-          <article>
-            <span class="included-icon" aria-hidden="true">💬</span>
-            <h3>Chat</h3>
-            <p>Networking channel with other top creators & models.</p>
-          </article>
-          <article>
-            <span class="included-icon" aria-hidden="true">💸</span>
-            <h3>Content Rewards</h3>
-            <p>Post & earn $$.</p>
-          </article>
+        <div class="wins-marquee" aria-label="Creator win screenshots">
+          <div class="wins-track">
+            <article class="win-card">
+              <img src="./assets/win-1.jpg" alt="Creator post about getting a paid TikTok in the first week">
+              <strong>Paid TikTok first week</strong>
+            </article>
+            <article class="win-card">
+              <img src="./assets/win-2.jpg" alt="Creator post about getting paid for a quick filmed post">
+              <strong>Paid for a quick post</strong>
+            </article>
+            <article class="win-card">
+              <img src="./assets/win-3.jpg" alt="Creator post celebrating a first paid post">
+              <strong>First paid post</strong>
+            </article>
+            <article class="win-card">
+              <img src="./assets/win-4.jpg" alt="Creator post about a paid GoPuff brand deal">
+              <strong>GoPuff brand deal</strong>
+            </article>
+            <article class="win-card">
+              <img src="./assets/win-5.jpg" alt="Creator post about earning 150 dollars from ads and affiliate work">
+              <strong>$150 affiliate win</strong>
+            </article>
+            <article class="win-card tall-win">
+              <img src="./assets/win-6.jpg" alt="Creator post about cashing out several times from CreatorVerse Labs">
+              <strong>Cashed out several times</strong>
+            </article>
+            <article class="win-card" aria-hidden="true">
+              <img src="./assets/win-1.jpg" alt="">
+              <strong>Paid TikTok first week</strong>
+            </article>
+            <article class="win-card" aria-hidden="true">
+              <img src="./assets/win-2.jpg" alt="">
+              <strong>Paid for a quick post</strong>
+            </article>
+            <article class="win-card" aria-hidden="true">
+              <img src="./assets/win-3.jpg" alt="">
+              <strong>First paid post</strong>
+            </article>
+            <article class="win-card" aria-hidden="true">
+              <img src="./assets/win-4.jpg" alt="">
+              <strong>GoPuff brand deal</strong>
+            </article>
+            <article class="win-card" aria-hidden="true">
+              <img src="./assets/win-5.jpg" alt="">
+              <strong>$150 affiliate win</strong>
+            </article>
+            <article class="win-card tall-win" aria-hidden="true">
+              <img src="./assets/win-6.jpg" alt="">
+              <strong>Cashed out several times</strong>
+            </article>
+          </div>
         </div>
+        <a class="button primary wins-button" href="#invite">Get Started</a>
       </section>
 
       <section class="steps" aria-label="How to join">
@@ -109,89 +131,6 @@
           <h3>Move by channel</h3>
           <p>Use each space for its purpose: intros, drops, collabs, questions, wins, updates, and direct creator opportunities.</p>
         </article>
-      </section>
-
-      <section class="section-grid" id="channels" aria-labelledby="channels-title">
-        <div class="section-heading">
-          <p class="eyebrow">Inside Select</p>
-          <h2 id="channels-title">Every channel has a job.</h2>
-          <p>
-            The goal is simple: less scrolling, more signal. Join the right rooms, post with context, and make it easy for
-            aligned creators to find you.
-          </p>
-        </div>
-        <div class="channel-list">
-          <article>
-            <span class="channel-icon">#</span>
-            <div>
-              <h3>Start Here</h3>
-              <p>Watch the intro, read the rules, and post a short profile so the room knows what you create.</p>
-            </div>
-          </article>
-          <article>
-            <span class="channel-icon">+</span>
-            <div>
-              <h3>Collab Board</h3>
-              <p>Find creators for shoots, lives, shoutouts, content swaps, travel days, and paid opportunities.</p>
-            </div>
-          </article>
-          <article>
-            <span class="channel-icon">$</span>
-            <div>
-              <h3>Drops and Deals</h3>
-              <p>Check campaign invites, feature slots, partner offers, and new monetization moves before they go wide.</p>
-            </div>
-          </article>
-          <article>
-            <span class="channel-icon">?</span>
-            <div>
-              <h3>Support Desk</h3>
-              <p>Ask channel, Whop, onboarding, growth, or placement questions without losing them in general chat.</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="about-band" id="about" aria-labelledby="about-title">
-        <div class="about-copy">
-          <p class="eyebrow">Your host</p>
-          <h2 id="about-title">Built by someone who wants creators moving with leverage.</h2>
-          <p>
-            I created CreatorVerse Club Select to give strong creators and models a private lane for access, organization,
-            and better conversations. This is not another noisy group chat. It is a curated room for people who show up,
-            create consistently, and want better connections around their work.
-          </p>
-        </div>
-        <div class="about-points">
-          <p><strong>Curated access</strong><span>Free invite for selected creators, models, and aligned partners.</span></p>
-          <p><strong>Clear flow</strong><span>Channels are organized by use, so the room stays easy to navigate.</span></p>
-          <p><strong>Action focused</strong><span>Every post should help someone connect, learn, promote, or move.</span></p>
-        </div>
-      </section>
-
-      <section class="faq" aria-labelledby="faq-title">
-        <div class="section-heading compact">
-          <p class="eyebrow">Quick answers</p>
-          <h2 id="faq-title">Before you join</h2>
-        </div>
-        <details open>
-          <summary>Is CreatorVerse Club Select free?</summary>
-          <p>Yes. This page is for a private free invite. There is no paid checkout for invited members.</p>
-        </details>
-        <details>
-          <summary>Who is this for?</summary>
-          <p>Creators, models, talent partners, and operators who are serious about building audience, access, and opportunity.</p>
-        </details>
-        <details>
-          <summary>Do I need the Whop app?</summary>
-          <p>The invite works on web, but the mobile app makes the channels easier to use and keeps updates in one place.</p>
-        </details>
-      </section>
-
-      <section class="final-cta" aria-labelledby="final-title">
-        <p class="eyebrow">Ready when you are</p>
-        <h2 id="final-title">Accept the free invite, download Whop, and step into Select.</h2>
-        <a class="button primary" href="https://whop.com/checkout/plan_tbpdrmnUneM1v" target="_blank" rel="noreferrer">Accept Free Invite</a>
       </section>
     </main>
   </body>
