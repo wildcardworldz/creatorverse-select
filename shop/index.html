@@ -49,8 +49,6 @@ h1{font-size:30px;line-height:1.15;letter-spacing:-1.3px;margin:0 0 10px}
 .video-card{display:block;padding:0;overflow:hidden;border-color:#2b4d68;box-shadow:inset 0 -2px #a9d6ff,0 12px 32px #7fc4ff18}
 .video-thumb{position:relative;aspect-ratio:16/9;overflow:hidden;background:#0a1018}
 .video-thumb img{display:block;width:100%;height:100%;object-fit:cover}
-.video-play{position:absolute;inset:0;margin:auto;width:78px;height:54px;border-radius:17px;display:grid;place-items:center;background:linear-gradient(180deg,#bfe3ff,#91c7f4);border:1px solid #eaf6ff;box-shadow:0 10px 30px #000c,0 0 26px #8fcfff8c}
-.video-play::after{content:"";margin-left:5px;border-top:11px solid transparent;border-bottom:11px solid transparent;border-left:18px solid #071018}
 .video-card .card-body{padding:19px 18px 13px}
 .video-card h2{font-size:23px;line-height:1.15;letter-spacing:-.65px;margin:5px 0}
 .video-card .description{font-size:15px;margin-top:7px}
@@ -131,8 +129,7 @@ for (const offer of config.offers) {
  else if (offer.video) {
   const thumb = element('div','video-thumb');
   const image = document.createElement('img'); image.src = offer.image; image.alt = offer.title + ' workshop preview';
-  const play = element('span','video-play'); play.setAttribute('aria-hidden','true');
-  thumb.append(image,play);
+  thumb.append(image);
   card.append(thumb,body,action);
  }
  else {
