@@ -79,9 +79,9 @@ a.action:hover{transform:translateY(-1px)}
   <h1 id="shop-name">CreatorVerse Shop</h1>
   <nav id="socials" aria-label="Social links"></nav>
  </header>
- <div class="section-label"><span>CURATED FOR YOU</span><span>â†“</span></div>
+ <div class="section-label"><span>CURATED FOR YOU</span><span>&#8595;</span></div>
  <section id="offers" aria-label="Shop and links"></section>
- <footer><p>CreatorVerse Shop</p><small id="draft-note">Preview collection Â· Sample offers</small></footer>
+ <footer><p>CreatorVerse Shop</p><small id="draft-note">Preview collection &#183; Sample offers</small></footer>
 </main>
 <script>
 // Edit this file to change the profile, social links, and offer cards.
@@ -90,9 +90,9 @@ window.SHOP = {
   name: 'CreatorVerse Shop',
   socials: [], // Example: { name: 'Instagram', url: 'https://www.instagram.com/your-handle/' }
   offers: [
-    { title: 'Brand Pitch Templates', category: '', description: "the exact 12 pitch templates I've used to land 6 figures in downloads + pitching workshop", label: 'Get All Pitches Instantly', sampleButton: 'Get All Pitches Instantly', hideActionIcon: true, circularAction: true, url: '', sample: true, mark: 'ðŸ“¬' },
-    { title: 'Letâ€™s work together', category: 'ONE-ON-ONE', description: 'Make room for your next big idea.', label: 'Book a session', url: '', sample: true, mark: 'âœ³' },
-    { title: 'A little something free', category: 'FREE RESOURCE', description: 'A first step for something you want to create.', label: 'Get the guide', url: '', sample: true, mark: 'â†“' }
+    { title: 'Brand Pitch Templates', category: '', description: "the exact 12 pitch templates I've used to land 6 figures in downloads + pitching workshop", label: 'Get All Pitches Instantly', sampleButton: 'Get All Pitches Instantly', hideActionIcon: true, circularAction: true, url: '', sample: true, mark: '\ud83d\udcec' },
+    { title: 'Let\u2019s work together', category: 'ONE-ON-ONE', description: 'Make room for your next big idea.', label: 'Book a session', url: '', sample: true, mark: '\u2733' },
+    { title: 'A little something free', category: 'FREE RESOURCE', description: 'A first step for something you want to create.', label: 'Get the guide', url: '', sample: true, mark: '\u2193' }
   ]
 };
 
@@ -116,7 +116,7 @@ for (const offer of config.offers) {
  const active = url && !offer.sample;
  const action = element(active ? 'a' : 'div', 'action' + (active ? '' : ' inactive'), active ? offer.label : (offer.sampleButton || 'Coming soon'));
  if (active) action.href = url;
- const actionMeta = offer.hideActionIcon ? '' : (offer.actionIcon || (active ? 'â†—' : 'Sample offer'));
+ const actionMeta = offer.hideActionIcon ? '' : (offer.actionIcon || (active ? '\u2197' : 'Sample offer'));
  if (actionMeta) action.append(element('span','',actionMeta));
  if (offer.featured) { card.append(element('div','feature-top','CREATORVERSE / VOL. 01'),body,action); }
  else {
